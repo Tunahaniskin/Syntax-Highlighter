@@ -28,7 +28,7 @@
 
 ## Proje Tanımı
 
-Bu proje, Swing kullanarak oluşturulmuş bir Java kod editörüdür. Editör, gerçek zamanlı olarak sözdizimi vurgulaması yapar ve yazılan kodun dilbilgisel doğruluğunu kontrol eder. Projede hiçbir harici kütüphane kullanılmamıştır.
+Bu proje, Swing kullanarak oluşturulmuş bir Java kod editörüdür. Editör, gerçek zamanlı olarak sözdizimi vurgulaması yapar ve yazılan kodun dilbilgisel doğruluğunu kontrol eder. Projede hiçbir harici kütüphane kullanılmamıştır. Bu projenin yapımında AI'dan yardım alınmıştır.
 
 ---
 
