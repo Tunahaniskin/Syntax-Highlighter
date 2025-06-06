@@ -1,154 +1,150 @@
-# Java Syntax Highlighter with GUI
+# Gerçek Zamanlı Sözdizimi Vurgulamalı Java Kod Editörü
 
-This project is a real-time syntax highlighter and parser for a simplified Java-like language. It is developed as part of a programming languages course project and showcases lexical and syntactic analysis using Java's Swing for GUI.
+## İçerik
 
-## ✨ Features
+- Proje Tanımı
 
-Real-time syntax highlighting with at least 5 token types
+- Seçilen Programlama Dili ve Nedenleri
 
-Lexical Analysis using Regular Expressions
+- Sözcüksel Analiz
 
-Top-Down Parsing with recursive descent parser
+- Sözdizimsel Analiz
 
-Support for control structures: if, else, while, switch, for
+- Gerçek Zamanlı Vurgulama
 
-Variable declarations: int, float, char, string, boolean
+- GUI İşlemleri
 
-GUI-based code editor using JTextPane
+- Kullanılan Teknikler Özeti
 
-⚙ Technologies Used
+- Örnek Kod Parçası
 
-Java SE
+- Nasıl Çalışır?
 
-Swing (for GUI)
+- Kurulum ve Çalıştırma
 
-Regex (for tokenization)
+- Demo Videosu
 
-Recursive descent (for parsing)
+---
 
-✍ Example Code Input
+## Proje Tanımı
 
-int x = 5;
-if (x > 3) {
-    float y = 4.2;
+Bu proje, Swing kullanarak oluşturulmuş bir Java kod editörüdür. Editör, gerçek zamanlı olarak sözdizimi vurgulaması yapar ve yazılan kodun dilbilgisel doğruluğunu kontrol eder. Projede hiçbir harici kütüphane kullanılmamıştır.
+
+---
+
+## Seçilen Programlama Dili ve Nedenleri
+
+- Dil: Java
+
+Nedenler:
+
+    - Swing ile GUI desteği
+
+    - Platformdan bağımsız
+
+    - Regex (Pattern/Matcher) ile sözcüksel analiz kolaylığı
+
+---
+
+## Sözcüksel Analiz
+
+Girdi, Pattern ve Matcher kullanılarak şu token türlerine ayrılır:
+
+- IF, ELSE, FOR, WHILE, SWITCH, CASE, RETURN, BREAK
+
+- INT, FLOAT, STRING, CHAR, BOOLEAN, TRUE, FALSE
+
+- Literaller: NUMBER, FLOATNUMBER, STRİNGMETIN, CHARMETIN
+
+- Operatörler: ASSIGN (=), EQ (==), PP (++), MM (--), vb.
+
+- Parantez ve blok işaretleri: LPAREN, RPAREN, LBRACE, RBRACE, SEMICOLON, COLON
+
+---
+
+## Sözdizimsel Analiz
+
+Yukarıdan aşağıya (Top-Down) yaklaşımla recursive parser yazılmıştır.
+Aşağıdaki yapılar desteklenmektedir:
+
+- if-else
+
+- while
+
+- for (int i = 0; i < 10; i++) yapısı)
+
+- switch-case
+
+- return ve break
+
+- Değişken tanımlama (int, float, string, char, boolean)
+
+---
+
+## Gerçek Zamanlı Vurgulama
+
+- DocumentListener kullanılarak metin değiştiğinde renklendir() metodu çağrılır.
+
+- StyledDocument ile her token tipi farklı renkte gösterilir.
+
+---
+
+## GUI İşlemleri
+
+- Swing JFrame, JPanel, JTextPane, JButton kullanılmıştır.
+
+- Kaydırma çubuğu ile büyük kodlar rahat gezilir.
+
+- Kod Kontrol butonuna basıldığında analiz yapılır.
+
+---
+
+## Kullanılan Teknikler Özeti
+
+- Sözcüksel Analiz: Regex tabanlı
+
+- Sözdizimsel Analiz: Top-Down recursive descent
+
+- GUI: Swing + JTextPane + StyledDocument
+
+- Vurgulama: En az 6 token tipi renklendirilmekte
+
+---
+
+## Örnek Kod Parçası
+
+int a = 5;
+if (a < 10) {
+    string mesaj = "Merhaba";
 } else {
-    string msg = "too small";
-}
-switch(x) {
-    case 1:
-        break;
-    case 5:
-        return x;
-}
-for(int i = 0; i < 10; i++) {
-    // loop body
+    char c = 'x';
 }
 
-⚡ How It Works
+---
 
-Lexical Analyzer (Tokenization)
+## Nasıl Çalışır?
 
-Uses a Pattern matcher with regex to break the input into tokens.
+1. Kullanıcı metin yazdıkça, DocumentListener tetiklenir.
 
-Supports tokens like IF, FOR, INT, FLOAT, STRINGMETIN, CHARMETIN, NUMBER, FLOATNUMBER, etc.
+2. renklendir() metodu regex ile token tiplerini bulur ve renklendirir.
 
-Parser
+3. Kod Kontrol butonuna basılırsa, tokenAyirici ile token listesi çıkarılır.
 
-Top-down recursive parser (KodAnalizci) processes token stream
+4. Bu liste KodAnalizci ile parse edilir.
 
-Supports blocks for if, else, for, while, switch, etc.
+---
 
-Validates matching braces, parentheses, and structure.
+## Kurulum ve Çalıştırma
 
-Real-time Highlighting
+1. Java 17+ kurulu olmalı
+2. IDE olarak IntelliJ, VSCode veya NetBeans kullanabilirsiniz
+3. proje_main.java dosyasını çalıştırın
 
-Highlights keywords, types, operators, literals, and comments dynamically as you type.
+---
 
-📚 How to Run
+## Demo Videosu
 
-Clone the repository:
-
-git clone https://github.com/yourusername/JavaSyntaxHighlighter
-cd JavaSyntaxHighlighter
-
-Compile and run the project:
-
-javac programlama_dilleri_proje/proje_main.java
-java programlama_dilleri_proje.proje_main
-
-Java 8 or above is required.
-
-🌐 Project Deliverables
-
-Deliverable
-
-Status
-
-Lexical Analyzer
-
-✅ Completed
-
-Top-down Parser
-
-✅ Completed
-
-GUI
-
-✅ Completed
-
-Syntax Highlighting
-
-✅ Completed
-
-Video Demo
-
-⏳ In Progress
-
-Public Article
-
-⏳ In Progress
-
-🏆 Evaluation Criteria
-
-Criterion
-
-Weight
-
-Highlighting Accuracy
-
-20%
-
-GUI Implementation
-
-20%
-
-Real-time Responsiveness
-
-10%
-
-Documentation (This file + Report)
-
-30%
-
-Video Demo (Publicly Shared)
-
-10%
-
-Public Article
-
-10%
-
-🚀 Next Steps
+Video: [YouTube Bağlantısı Gelecek]
 
 
-
-🙏 Author
-
-Your Name
-
-University / Course Name
-
-For any questions or suggestions, feel free to open an issue or contact me via GitHub.
-
-© 2025 Java Syntax Highlighter Project
 
