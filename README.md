@@ -24,6 +24,8 @@
 
 - Demo Videosu
 
+- Proje Raporu
+
 ---
 
 ## Proje Tanımı
@@ -145,6 +147,12 @@ Aşağıdaki yapılar desteklenmektedir:
 ## Demo Videosu
 
 Video: [YouTube Bağlantısı Gelecek]
+
+---
+
+## Proje Raporu
+
+Rapor: [📄 Proje Raporunu Görüntüle](docs/ProjeRaporu.docx)
 
 
 
