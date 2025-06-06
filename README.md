@@ -152,7 +152,8 @@ Video: [YouTube Bağlantısı Gelecek]
 
 ## Proje Raporu
 
-Rapor: [📄 Proje Raporunu Görüntüle](docs/ProjeRaporu.docx)
+Raporu indir: 📄 [Proje Raporunu İndir](https://github.com/Tunahaniskin/Syntax-Highlighter/blob/main/ProjeRaporu.docx?raw=true)
+
 
 
 
