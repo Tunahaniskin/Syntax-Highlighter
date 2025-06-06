@@ -146,8 +146,7 @@ Aşağıdaki yapılar desteklenmektedir:
 
 ## Demo Videosu
 
-Video: [YouTube Bağlantısı Gelecek]
-
+Video: https://youtu.be/MZ10JU7uuFM
 ---
 
 ## Proje Raporu
