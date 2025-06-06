@@ -1,8 +1,8 @@
-h1 Java Syntax Highlighter with GUI
+# Java Syntax Highlighter with GUI
 
 This project is a real-time syntax highlighter and parser for a simplified Java-like language. It is developed as part of a programming languages course project and showcases lexical and syntactic analysis using Java's Swing for GUI.
 
-✨ Features
+## ✨ Features
 
 Real-time syntax highlighting with at least 5 token types
 
