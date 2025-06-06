@@ -140,7 +140,7 @@ Aşağıdaki yapılar desteklenmektedir:
 
 1. Java 17+ kurulu olmalı
 2. IDE olarak IntelliJ, VSCode veya NetBeans kullanabilirsiniz
-3. proje_main.java dosyasını çalıştırın
+3. SyntaxHighlighter.java dosyasını çalıştırın
 
 ---
 
