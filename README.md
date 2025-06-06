@@ -113,12 +113,12 @@ Aşağıdaki yapılar desteklenmektedir:
 
 ## Örnek Kod Parçası
 
-int a = 5;
-if (a < 10) {
-    string mesaj = "Merhaba";
-} else {
-    char c = 'x';
-}
+    int a = 5;
+    if (a < 10) {
+        string mesaj = "Merhaba";
+    } else {
+        char c = 'x';
+    }
 
 ---
 
